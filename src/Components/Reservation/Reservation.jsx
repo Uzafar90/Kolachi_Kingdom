@@ -20,7 +20,10 @@ const Reservation = () => {
 					</p>
 				</div>
 				<div className="kk__reservation-form" data-aos="fade-left">
-					<form action="">
+					<form
+						action="https://formsubmit.co/d2d684d353f392350c496eb73486269f"
+						method="POST"
+					>
 						<input
 							className="form"
 							type="text"
@@ -40,7 +43,7 @@ const Reservation = () => {
 							type="tel"
 							name="phone"
 							placeholder="Phone"
-							pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+							pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
 							required
 						/>
 
