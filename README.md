@@ -1,4 +1,4 @@
-![](Asset/White%20logo.png)
+![](/src/Asset/White%20logo.png)
 
 # Kolachi Kingdom
 
