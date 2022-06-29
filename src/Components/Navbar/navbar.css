@@ -1,0 +1,129 @@
+.kk__navbar-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: inter;
+	font-weight: 500;
+}
+
+.kk__navbar-links {
+	display: flex;
+	justify-content: space-around;
+	width: 50rem;
+}
+
+.kk__navbar-links a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.kk__navbar-links a:hover {
+	border-bottom: 1px solid #fff;
+}
+
+.kk__navbar-button a {
+	border: 1px solid #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	color: #fff;
+	transition: all 400ms ease-in-out;
+}
+
+.kk__navbar-button a:hover {
+	background-color: #fff;
+	color: black;
+}
+
+.nav-btn {
+	font-size: 2rem;
+	background-color: none;
+	background: none;
+	border: none;
+	color: #fff;
+	display: none;
+}
+
+.btn-close {
+	display: none;
+}
+
+@media (max-width: 986px) {
+	.kk__navbar-button {
+		display: none;
+	}
+	.kk__navbar-container {
+		overflow: hidden;
+	}
+	.kk__navbar-links {
+		overflow: hidden;
+		overflow-y: auto;
+		position: absolute;
+		right: 0;
+		width: 100vw;
+		height: 100vh;
+		top: -100%;
+		display: flex;
+		gap: 2rem;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		transition: 0.7s;
+	}
+	.kk__navbar-links a {
+		font-size: 2rem;
+		letter-spacing: 0.5rem;
+		color: rgb(197, 197, 197);
+	}
+
+	.nav-btn {
+		display: block;
+	}
+
+	.btn-close {
+		display: block;
+		position: absolute;
+		top: 1rem;
+		right: 8rem;
+		background: none;
+		border: none;
+		outline: none;
+		color: rgb(197, 197, 197);
+		font-size: 2rem;
+	}
+	.responsive_nav {
+		top: 0%;
+		background-color: rgb(31, 31, 31);
+		z-index: 1000;
+		max-width: 100%;
+		scroll-behavior: 0;
+	}
+}
+
+@media (max-width: 490px) {
+	.btn-close {
+		left: 11rem;
+	}
+	.nav-btn {
+		font-size: 1.5rem;
+		margin-right: -11rem;
+	}
+}
+
+@media (max-width: 390px) {
+	.nav-btn {
+		margin-right: -8rem;
+	}
+	.btn-close {
+		left: 8rem;
+	}
+	.kk__navbar-container {
+		width: 100%;
+	}
+	.kk__navbar-links a {
+		font-size: 1.4rem;
+		letter-spacing: 0.5rem;
+	}
+}
